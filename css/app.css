@@ -1,8 +1,10 @@
-body{
+body {
   margin: 0;
   font-family: Quicksand;
+  overflow-x: hidden;
 }
-.name{
+
+.name {
   position: absolute;
   top: 0;
   left: 0;
@@ -13,17 +15,17 @@ body{
   padding: 1%;
   margin: 0;
 }
-.introduction{
+
+.introduction {
   display: flex;
   flex-direction: column;
-  background-image: url(https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=9790e4c555b224435e25ab1acd67e217);
   height: 60vh;
+  background-image: url(../images/pf.jpg);
   background-size: cover;
-  backgroumd-repeat: no-repeat;
+  background-repeat: no-repeat;
   color: white;
   align-items: center;
-  font-size: 1.6em;
-  
+  font-size: 1.6em;  
 }
 
 .portfolio-title {
@@ -31,30 +33,29 @@ body{
   letter-spacing: 0.4em;
   text-transform: uppercase;
 }
-.portfolio{
+
+.portfolio {
   display: flex;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 
-.portfolio .project{
+.portfolio .project {
 display: flex;
 flex-direction: column;
-
 }
+
 .project * {
   box-sizing: border-box;
 }
+
 .project .image {
 /*   max-width: 100%; */
   vertical-align: top; 
   height: 230px;
 }
 
-
 .project {
-  position: relative;
-  
+  position: relative;  
   overflow: hidden;
   margin: 10px 1%;
   min-width: 220px;
@@ -65,7 +66,7 @@ flex-direction: column;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
-.project i{
+.project i {
   position: absolute;
   top: 30%;
   left: 40%;
@@ -78,47 +79,56 @@ flex-direction: column;
   background: black;
 }
 
-
-.project:hover .image{
+.project:hover .image {
   filter: grayscale(50%);
   opacity :0.7;
 }
-.project i{
+
+.project i {
   transform: scale(0);
 }
-.project:hover i{
+
+.project:hover i {
  transform: scale(1);
 }
-.project *{
+
+.project * {
   transition: all 1s ease-in ;
 }
-.project .app-link{
+
+.project .app-link {
   color: black;
   font-weight: bold;
   font-size:1.2em;
   padding:5px;
 }
-footer{
+
+footer {
   padding: 10px;
   text-align: center;
   background: #e0e0e0;
   height: 30px;
 }
-@media screen and (max-width: 900px){
-  .portfolio{
+
+@media screen and (max-width: 900px) {
+  .portfolio {
     flex-wrap:wrap;
   }
-  .project{
+
+  .project {
     width: 40%;
   }
+
 }
 
-@media screen and (max-width: 500px){
-  .portfolio{
+@media screen and (max-width: 500px) {
+  .portfolio {
     flex-wrap:wrap;
   }
-  .project{
+
+  .project {
     width: 90%;
   }
+
 }
 
